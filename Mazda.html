@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JDM'S</title>
+    <link rel="icon" href="../Imagenes/Logo.png" type="image/png">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra todo el contenido */
+    justify-content: center;
+    min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+.header {
+    background: linear-gradient(90deg, #E60012, #A30000);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(230, 0, 18, 0.7);
+}
+
+.main {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido dentro de .main */
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(230, 0, 18, 0.6);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.carousel-nav button {
+    background: rgba(255, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.carousel-nav button:hover {
+    background: rgba(255, 0, 0, 0.8);
+}
+
+.footer {
+    background: #111;
+    color: #FFF;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    border-top: 3px solid #E60012;
+}
+
+.nav {
+    background: #222;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #E60012;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFFFFF;
+}
+
+    </style>
+</head>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Volver</a></li> 
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="header"><h1>Mazda</h1></div>
+        <div class="main">
+            <h2>Introducción</h2>
+            <h3>Mazda ha sido clave en la cultura JDM, destacando por su enfoque en la innovación y el rendimiento. El Mazda RX-7, con su motor rotativo, se convirtió en un ícono de alto rendimiento y fue crucial en el auge del drifting. El Mazda MX-5 Miata, lanzado en los 90, se hizo popular por su ligereza y manejo ágil. Hoy, Mazda sigue siendo relevante en JDM, con modelos como el RX-Vision y su continuo desarrollo del motor rotativo.</h3>
+            <h1>Modelos Icónicos</h1>
+            <h2>Mazda RX7 (1978-2002)</h2>
+            <h3>El RX-7 es probablemente el modelo más emblemático de Mazda en cuanto a JDM. Con su motor rotativo y un diseño aerodinámico único, el RX-7 ha sido un favorito entre los entusiastas del tuning y las carreras. El modelo más reconocido es el FD3S (1992-2002), conocido por su impresionante manejo y potencia.</h3>
+            
+            <div class="carousel" id="carousel1">
+                <div class="carousel-images">
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Mazda1.jpg" alt="Mazda RX7">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Mazda2.jpg" alt="Mazda RX7">
+                        <p>Keisuke Takahashi (Initial D)</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Mazda3.jpg" alt="Mazda RX7">
+                        <p>Ryosuke Takahashi (Initial D)</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Mazda4.jpg" alt="Mazda RX7">
+                        <p>Han Lue (FF Tokyo Drift)</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Mazda5.jpg" alt="Mazda RX7">
+                        <p>Dominic Toretto (Fast Furious)</p>
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button onclick="moveSlide('carousel1', -1)">&#10094;</button>
+                    <button onclick="moveSlide('carousel1', 1)">&#10095;</button>
+                </div>
+            </div>
+            <h2>Mazda RX8 (2003-2012)</h2>
+            <h3>Aunque el RX-8 dejó de producirse en 2012, sigue siendo uno de los modelos más admirados de Mazda. Similar al RX-7 pero con un diseño de 4 puertas y un motor rotativo más moderno, el RX-8 ha sido popular en el mundo JDM por su manejo y su exclusividad.</h3>
+            
+            <div class="carousel" id="carousel2">
+                <div class="carousel-images">
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Mazda6.jpg" alt="Mazda RX8">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Mazda7.jpg" alt="Mazda RX8">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Mazda8.jpg" alt="Mazda RX8">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Mazda9.jpg" alt="Mazda RX8">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Mazda10.jpg" alt="Mazda RX8">
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button onclick="moveSlide('carousel2', -1)">&#10094;</button>
+                    <button onclick="moveSlide('carousel2', 1)">&#10095;</button>
+                </div>
+            </div>
+        </div>    
+        <h2>Mazda Miata MX-5 (1989-presente)</h2>
+        <h3>El Miata es uno de los autos deportivos más exitosos de todos los tiempos. Conocido por su ligereza y agilidad, el Miata (MX-5) se ha ganado un lugar en el corazón de los entusiastas del JDM debido a su diseño simple y la posibilidad de personalización. Las versiones más famosas en el mercado JDM son las de la generación NA (1989-1997) y la NB (1998-2005).</h3>
+        <div class="carousel" id="carousel3">
+            <div class="carousel-images">
+                <div class="carousel-item">
+                    <img src="../Imagenes/Mazda11.jpg" alt="Mazda MX-5">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Mazda12.jpg" alt="Mazda MX-5">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Mazda13.jpg" alt="Mazda MX-5">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Mazda14.jpg" alt="Mazda MX-5">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Mazda15.jpg" alt="Mazda MX-5">
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button onclick="moveSlide('carousel3', -1)">&#10094;</button>
+                <button onclick="moveSlide('carousel3', 1)">&#10095;</button>
+            </div>
+        </div>
+
+        <h2>Mazda 323 GT-R (1989-1994)</h2>
+        <h3>Este modelo es menos conocido fuera de Japón, pero es muy respetado en la escena JDM. Con tracción en las 4 ruedas y un motor turboalimentado, el 323 GT-R fue un competidor serio en los rallys y sigue siendo muy buscado por coleccionistas.</h3>
+        <div class="carousel" id="carousel4">
+            <div class="carousel-images">
+                <div class="carousel-item">
+                    <img src="../Imagenes/Mazda16.jpg" alt="Mazda 323">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Mazda17.jpg" alt="Mazda 323">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Mazda18.jpg" alt="Mazda 323">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Mazda19.jpg" alt="Mazda 323">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Mazda20.jpg" alt="Mazda 323">
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button onclick="moveSlide('carousel4', -1)">&#10094;</button>
+                <button onclick="moveSlide('carousel4', 1)">&#10095;</button>
+            </div>
+        </div>
+        <h2>Mazda Cosmo (1990-1996)</h2>
+        <h3>Un gran turismo con motor rotativo y un diseño elegante. Fue el primer auto de producción en el mundo con un sistema de navegación GPS y podía tener el legendario motor 20B-REW, el único motor rotativo de 3 rotores producido en masa. Es un clásico subestimado del JDM.</h3>
+        <div class="carousel" id="carousel5">
+            <div class="carousel-images">
+                <div class="carousel-item">
+                    <img src="../Imagenes/Mazda21.jpg" alt="Mazda 323">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Mazda22.jpg" alt="Mazda 323">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Mazda23.jpg" alt="Mazda 323">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Mazda24.jpg" alt="Mazda 323">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Mazda25.jpg" alt="Mazda 323">
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button onclick="moveSlide('carousel5', -1)">&#10094;</button>
+                <button onclick="moveSlide('carousel5', 1)">&#10095;</button>
+            </div>
+        </div>
+
+    <script>
+        const carouselData = {}; // To store indices for each carousel
+
+        function moveSlide(carouselId, step) {
+            if (!carouselData[carouselId]) {
+                carouselData[carouselId] = 0;
+            }
+
+            const carousel = document.getElementById(carouselId);
+            const slides = carousel.querySelectorAll('.carousel-item');
+            const totalSlides = slides.length;
+
+            carouselData[carouselId] = (carouselData[carouselId] + step + totalSlides) % totalSlides; // Circular navigation
+            const newTransformValue = -carouselData[carouselId] * 100;
+            carousel.querySelector('.carousel-images').style.transform = `translateX(${newTransformValue}%)`;
+        }
+    </script>
+</body>
+</html>

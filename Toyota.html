@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JDM'S</title>
+    <link rel="icon" href="../Imagenes/Logo.png" type="image/png">
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+    color: #1D1D1D;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+.header {
+    background: #EB0A1E; /* Rojo brillante */
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(235, 10, 30, 0.7);
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.main {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(235, 10, 30, 0.6);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 350px; /* Puedes ajustar este valor si quieres otro tamaño */
+    object-fit: cover;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.carousel-nav button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.carousel-nav button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.footer {
+    background: #1D1D1D; /* Negro */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    border-top: 3px solid #EB0A1E; /* Rojo brillante */
+}
+
+.nav {
+    background: #1D1D1D; /* Negro */
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #EB0A1E; /* Rojo brillante */
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFFFFF;
+}
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Volver</a></li> 
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="header"><h1>Toyota</h1></div>
+        <div class="main">
+            <h2>Introducción</h2>
+            <h3>Toyota es una de las marcas más influyentes en la cultura JDM, conocida por sus autos de alto rendimiento, confiabilidad y legado en competiciones. Con modelos como el Supra MK4, el AE86 y el Celica GT-Four, Toyota ha dejado una huella profunda en el mundo del tuning, el drift y las carreras. Sus autos son venerados por su ingeniería robusta, su versatilidad y el potencial para modificaciones, siendo favoritos tanto en Japón como globalmente.</h3>
+            <h1>Modelos Icónicos</h1>
+            <h2>Toyota Supra (A80) (1993-2002)</h2>
+            <h3>El Toyota Supra MK4 (A80) es el rey indiscutible del JDM. Su motor 2JZ-GTE, un 3.0L twin-turbo de seis cilindros en línea, es legendario por su capacidad de modificarlo hasta niveles extremos, superando fácilmente los 1,000 HP con las modificaciones adecuadas. Su diseño aerodinámico, tracción trasera y gran desempeño lo hicieron una estrella en las calles, en las pistas y en la cultura pop, gracias a Rápidos y Furiosos.</h3>
+            
+            <div class="carousel" id="carousel1">
+                <div class="carousel-images">
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Toyota1.jpg" alt="Toyota MK4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Toyota2.jpg" alt="Toyota MK4">
+                        <p>Brian O'Conner(Fast and Furious)</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Toyota3.jpg" alt="Toyota MK4">
+                        <p>Brian O'Conner(Fast and Furious 6)</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Toyota4.jpg" alt="Toyota MK4">
+                        <p>Slap Jack (2Fast 2Furious)</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Toyota5.jpg" alt="Toyota MK4">
+                        
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button onclick="moveSlide('carousel1', -1)">&#10094;</button>
+                    <button onclick="moveSlide('carousel1', 1)">&#10095;</button>
+                </div>
+            </div>
+            <h2>Toyota AE86 (1983-1987)</h2>
+            <h3>Conocido como Hachiroku, este modelo se volvió icónico en el mundo del drift y la cultura automovilística japonesa. Disponible en dos versiones, Corolla Levin (con faros fijos) y Sprinter Trueno (con faros retráctiles), este auto ligero con tracción trasera y el confiable motor 4A-GE de 1.6L se hizo famoso en la serie Initial D. Su equilibrio y capacidad de derrape lo convirtieron en un favorito entre los pilotos de drift.</h3>
+            
+            <div class="carousel" id="carousel2">
+                <div class="carousel-images">
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Toyota6.jpg" alt="AE86">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Toyota7.jpg" alt="AE86">
+                        <p>Takumi Fujiwara Trueno (Initial D First Stage)</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Toyota8.jpg" alt="AE86">
+                        <p>Wataru Akiyama Levin (Initial D Second Stage)</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Toyota 9.jpg" alt="AE86">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Toyota10.jpg" alt="AE86">
+                        <p>Takumi Fujiwara Trueno (Initial D Fourth Stage)</p>
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button onclick="moveSlide('carousel2', -1)">&#10094;</button>
+                    <button onclick="moveSlide('carousel2', 1)">&#10095;</button>
+                </div>
+            </div>
+        </div>    
+        <h2>Toyota Celica GT-Four (ST205) (1994-1999)</h2>
+        <h3>Este Celica fue diseñado para dominar los rallys del Grupo A. Equipado con un motor 3S-GTE turboalimentado de 2.0L, tracción integral (AWD) y un sistema de suspensión avanzada, el ST205 era un monstruo en caminos difíciles. Su éxito en el WRC (World Rally Championship) lo convirtió en un clásico de Toyota y en uno de los hatchbacks deportivos más respetados del JDM.</h3>
+        <div class="carousel" id="carousel3">
+            <div class="carousel-images">
+                <div class="carousel-item">
+                    <img src="../Imagenes/Toyota11.jpg" alt="Celica">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Toyota12.jpg" alt="Celica">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Toyota13.jpg" alt="Celica">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Toyota14.jpg" alt="Celica">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Toyota15.jpg" alt="Celica">
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button onclick="moveSlide('carousel3', -1)">&#10094;</button>
+                <button onclick="moveSlide('carousel3', 1)">&#10095;</button>
+            </div>
+        </div>
+
+        <h2>Toyota Corolla Levin GT-Z (AE93 Supercharged) (1993)</h2>
+        <h3>El Toyota Corolla Levin GT-Z AE93, lanzado en 1993, es una versión deportiva que se destacó por su motor 4A-GZE, un 1.6L supercargado que ofrecía excelente potencia y respuesta para un compacto de tracción delantera. Aunque menos conocido que el AE86, el AE93 mantenía el alma deportiva de la familia Levin con una carrocería más moderna, suspensión mejorada y un diseño agresivo. Este modelo fue muy valorado por su fiabilidad, potencial de tuning y por ser una alternativa rápida y accesible dentro del mundo JDM.</h3>
+        <div class="carousel" id="carousel4">
+            <div class="carousel-images">
+                <div class="carousel-item">
+                    <img src="../Imagenes/Toyota16.jpg" alt="Levin">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Toyota17.jpg" alt="Levin">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Toyota18.jpg" alt="Levin">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Toyota19.jpg" alt="Levin">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Toyota20.jpg" alt="Levin">
+                    <p>Michel Elias (1997-2005)</p>
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button onclick="moveSlide('carousel4', -1)">&#10094;</button>
+                <button onclick="moveSlide('carousel4', 1)">&#10095;</button>
+            </div>
+        </div>
+        <h2>Toyota MR2 (SW20) (1989-1999)</h2>
+        <h3>El Toyota MR2 SW20 es un deportivo único en el JDM, gracias a su configuración de motor central y tracción trasera (MR). Con un diseño similar a los Ferrari de la época, el SW20 ofrecía una experiencia de conducción ágil y emocionante. Su versión turbo con el motor 3S-GTE de 2.0L lo hacía un verdadero competidor en las calles y pistas. Su balance y rendimiento lo han convertido en un favorito entre los amantes del JDM.</h3>
+        <div class="carousel" id="carousel5">
+            <div class="carousel-images">
+                <div class="carousel-item">
+                    <img src="../Imagenes/Toyota21.jpg" alt="MR2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Toyota22.jpg" alt="MR2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Toyota23.jpg" alt="MR2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Toyota24.jpg" alt="MR2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Toyota25.jpg" alt="MR2">
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button onclick="moveSlide('carousel5', -1)">&#10094;</button>
+                <button onclick="moveSlide('carousel5', 1)">&#10095;</button>
+            </div>
+        </div>
+
+    <script>
+        const carouselData = {}; // To store indices for each carousel
+
+        function moveSlide(carouselId, step) {
+            if (!carouselData[carouselId]) {
+                carouselData[carouselId] = 0;
+            }
+
+            const carousel = document.getElementById(carouselId);
+            const slides = carousel.querySelectorAll('.carousel-item');
+            const totalSlides = slides.length;
+
+            carouselData[carouselId] = (carouselData[carouselId] + step + totalSlides) % totalSlides; // Circular navigation
+            const newTransformValue = -carouselData[carouselId] * 100;
+            carousel.querySelector('.carousel-images').style.transform = `translateX(${newTransformValue}%)`;
+        }
+    </script>
+</body>
+</html>

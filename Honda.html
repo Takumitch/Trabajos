@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JDM'S</title>
+    <link rel="icon" href="../Imagenes/Logo.png" type="image/png">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF; /* Fondo blanco predominante */
+    color: #000000; /* Texto negro para contraste */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    background: #DA251D; /* Rojo Honda */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(218, 37, 29, 0.4);
+    color: #FFFFFF; /* Texto blanco */
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #F5F5F5; /* Suave gris claro */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15); /* Sombra discreta */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.carousel-nav button {
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.carousel-nav button:hover {
+    background: #0033A0; /* Azul Honda */
+    color: #FFFFFF;
+}
+
+.footer {
+    background: #F0F0F0; /* Gris claro */
+    color: #000000;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    border-top: 3px solid #DA251D; /* Rojo Honda */
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px;
+}
+
+.nav {
+    background: #E0E0E0; /* Gris neutro claro */
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.nav .ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #0033A0; /* Azul Honda */
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #DA251D; /* Rojo Honda al pasar el mouse */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Volver</a></li> 
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="header"><h1>Honda</h1></div>
+        <div class="main">
+            <h2>Introducción</h2>
+            <h3>Honda ha sido sinónimo de innovación, precisión y pasión por la ingeniería en el mundo automotriz japonés. A diferencia de otras marcas enfocadas en tracción integral o turbo, Honda se destacó por su enfoque en la ligereza, motores de alto régimen y tracción delantera. Gracias a su filosofía de ingeniería centrada en el equilibrio entre potencia y eficiencia, modelos como el NSX, el Civic Type R y el S2000 demostraron que no hace falta sobrealimentación para lograr un auto deportivo extraordinario. El alma del JDM de Honda está en sus chasis ágiles, motores VTEC y espíritu competitivo.</h3>
+            <h1>Modelos Icónicos</h1>
+            <h2>Honda NSX (1990-2005)</h2>
+            <h3>El NSX fue el primer superdeportivo japonés de motor central, creado para competir directamente contra los europeos, pero con fiabilidad y precisión japonesa. Su motor V6 atmosférico con VTEC, chasis de aluminio y puesta a punto inspirada por Ayrton Senna lo hicieron revolucionario. Fue un auto que demostró que Honda podía hacer ingeniería de clase mundial con equilibrio, elegancia y rendimiento sin comprometer la conducción diaria. Hoy es uno de los autos más respetados del JDM, tanto por su desempeño como por su legado.</h3>
+            
+            <div class="carousel" id="carousel1">
+                <div class="carousel-images">
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Honda1.jpg" alt="NSX">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Honda2.jpg" alt="NSX">
+                        <p>Go Hojo (Initial D: Final Stage)</p>
+                   </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Honda3.jpg" alt="NSX">
+                        <p>Mia Toreto (Fast and Furious 4)</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Honda4.jpg" alt="NSX">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Honda5.jpg" alt="NSX">
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button onclick="moveSlide('carousel1', -1)">&#10094;</button>
+                    <button onclick="moveSlide('carousel1', 1)">&#10095;</button>
+                </div>
+            </div>
+            <h2>Honda Civic Type R (1997–presente)</h2>
+            <h3>El Civic Type R representa la cúspide del hot hatch japonés. Desde el EK9 hasta las versiones modernas como el FK8 y FL5, el Type R ha ofrecido motores de alta compresión, chasis afinados para circuito y una conducción explosiva. Todos los Type R comparten el ADN VTEC, peso ligero, suspensiones agresivas y respuesta precisa. Aunque tracción delantera, se comportan como deportivos puros y han ganado respeto global por su rendimiento tanto en pista como en calle. Es uno de los modelos más emblemáticos y deseados por los entusiastas del JDM.</h3>
+            <div class="carousel" id="carousel2">
+                <div class="carousel-images">
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Honda6.jpg" alt="Civic">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Honda7.jpg" alt="Civic">
+                        <p>Tomoyuki Tachi (Initial D:Fourth Stage)</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Honda8.jpg" alt="Civic">
+                        <p>Shingo Shoji (Initial D: First Stage)</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Honda9.jpg" alt="Civic">
+                        <p>Dominic Toreto (Fast and Furoius)</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Honda10.jpg" alt="Civic">
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button onclick="moveSlide('carousel2', -1)">&#10094;</button>
+                    <button onclick="moveSlide('carousel2', 1)">&#10095;</button>
+                </div>
+            </div>
+        </div>    
+        <h2>Honda Integra Type R (DC2/DC5) (1995–2006)</h2>
+        <h3>El Integra Type R es considerado por muchos como el mejor auto de tracción delantera jamás fabricado. Con su motor 1.8L VTEC de hasta 200 HP, chasis ultra rígido, reducción de peso y dirección quirúrgica, el DC2 (y luego el DC5) se volvieron leyenda. Su equilibrio dinámico era tan preciso que podía rivalizar con autos mucho más potentes. Es un ícono absoluto del manejo puro y el espíritu "menos es más" de Honda. Incluso hoy, sigue siendo un referente cuando se habla de autos deportivos ligeros.</h3>
+        <div class="carousel" id="carousel3">
+            <div class="carousel-images">
+                <div class="carousel-item">
+                    <img src="../Imagenes/Honda11.jpg" alt="Integra">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Honda12.jpg" alt="Integra">
+                    <p>Smiley Sakai (Initial D: Fourth Stage)</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Honda13.jpg" alt="Integra">
+                    <p>Mia Toreto (Fast and Furious)</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Honda14.jpg" alt="Integra">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Honda15.jpg" alt="Integra">
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button onclick="moveSlide('carousel3', -1)">&#10094;</button>
+                <button onclick="moveSlide('carousel3', 1)">&#10095;</button>
+            </div>
+        </div>
+
+        <h2>Honda S2000 (1999–2009)</h2>
+        <h3>El S2000 fue el regalo de Honda por su 50º aniversario. Un roadster con motor delantero, tracción trasera, y el motor atmosférico 2.0L más potente del mundo en su época (hasta 9000 rpm). Su chasis extremadamente rígido, reparto de peso 50:50 y caja manual de recorrido corto lo hacen una máquina enfocada completamente al conductor. Es uno de los pocos Honda con tracción trasera, y es venerado por su conducción emocionante, sonido de motor y diseño atemporal. El S2000 es uno de los mejores deportivos ligeros jamás construidos.</h3>
+        <div class="carousel" id="carousel4">
+            <div class="carousel-images">
+                <div class="carousel-item">
+                    <img src="../Imagenes/Honda16.jpg" alt="S2000">
+                    <p>Toshiya Hoshima (Initial D: Fourth Stage) </p>
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Honda17.jpg" alt="S2000">
+                    <p>Suki (2Fast 2Furious)</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Honda18.jpg" alt="S2000">
+                    <p>Jhony Tran (Fast and Furious)</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Honda19.jpg" alt="S2000">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Honda20.jpg" alt="S2000">
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button onclick="moveSlide('carousel4', -1)">&#10094;</button>
+                <button onclick="moveSlide('carousel4', 1)">&#10095;</button>
+            </div>
+        </div>
+        <h2>Honda Prelude SiR (1992–2001)</h2>
+        <h3>El Prelude SiR fue uno de los coupés deportivos más finos de Honda. Equipado con motores H22A con VTEC, suspensión avanzada (algunas versiones con dirección a las 4 ruedas) y diseño elegante, era una mezcla perfecta de confort y rendimiento. No tan radical como los Type R, pero sí muy equilibrado y refinado. Hoy es un clásico subestimado dentro del JDM, y representa el enfoque más maduro y técnico de Honda en los años 90.</h3>
+        <div class="carousel" id="carousel5">
+            <div class="carousel-images">
+                <div class="carousel-item">
+                    <img src="../Imagenes/Honda21.jpg" alt="Prelude">
+                    <p>Brian O'Conner (Fast and Furious)</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Honda22.jpg" alt="Prelude">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Honda23.jpg" alt="Prelude">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Honda24.jpg" alt="Prelude">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Honda25.jpg" alt="Prelude">
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button onclick="moveSlide('carousel5', -1)">&#10094;</button>
+                <button onclick="moveSlide('carousel5', 1)">&#10095;</button>
+            </div>
+        </div>
+
+    <script>
+        const carouselData = {}; // To store indices for each carousel
+
+        function moveSlide(carouselId, step) {
+            if (!carouselData[carouselId]) {
+                carouselData[carouselId] = 0;
+            }
+
+            const carousel = document.getElementById(carouselId);
+            const slides = carousel.querySelectorAll('.carousel-item');
+            const totalSlides = slides.length;
+
+            carouselData[carouselId] = (carouselData[carouselId] + step + totalSlides) % totalSlides; // Circular navigation
+            const newTransformValue = -carouselData[carouselId] * 100;
+            carousel.querySelector('.carousel-images').style.transform = `translateX(${newTransformValue}%)`;
+        }
+    </script>
+</body>
+</html>

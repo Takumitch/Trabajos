@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JDM'S</title>
+    <link rel="icon" href="../Imagenes/Logo.png" type="image/png">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1A1A1A; /* Fondo oscuro estilo garaje */
+    color: #E0E0E0; /* Texto en plata suave */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    background: #003366; /* Azul metálico */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 51, 102, 0.7);
+    color: #C5B358; /* Dorado */
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.main {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); /* sombra suave */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.carousel-nav button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    color: #C5B358; /* Dorado */
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.carousel-nav button:hover {
+    background: rgba(192, 192, 192, 0.8); /* plata clara */
+    color: #000000;
+}
+
+.footer {
+    background: #000000; /* Negro */
+    color: #C5B358; /* Dorado */
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    border-top: 3px solid #003366; /* Azul metálico */
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px;
+}
+
+.nav {
+    background: #000000; /* Negro */
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.nav .ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #C5B358; /* Dorado */
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #C0C0C0; /* Plata */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Volver</a></li> 
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="header"><h1>Subaru</h1></div>
+        <div class="main">
+            <h2>Introducción</h2>
+            <h3>Subaru ha forjado una identidad única dentro del mundo automotriz japonés gracias a su compromiso con la tracción total simétrica y los motores bóxer. Aunque su catálogo no es tan amplio como el de otras marcas japonesas, cada uno de sus modelos ha dejado huella por su ingeniería precisa, durabilidad y carácter deportivo. En el JDM (Japanese Domestic Market), Subaru es ampliamente reconocida por su dominio en los rallies y por modelos que combinan tecnología con un rendimiento sobresaliente, siendo el Impreza WRX y su versión más radical, el STi, los representantes más emblemáticos de esta herencia.</h3>
+            <h1>Modelos Icónicos</h1>
+            <h2>Subaru Impreza WRX (1992–presente)</h2>
+            <h3>El WRX (World Rally eXperimental) nació con el propósito de llevar la ingeniería de rally a las calles. Con un motor bóxer turbo, tracción integral permanente y chasis reforzado, el Impreza WRX fue una revolución en los 90. Desde entonces, se ha mantenido como un sedán deportivo accesible y respetado, con una conducción ágil, gran respuesta en curvas y excelente comportamiento en cualquier superficie. Su éxito se basa en la fórmula ganadora de potencia controlada, equilibrio estructural y un diseño robusto.</h3>
+            
+            <div class="carousel" id="carousel1">
+                <div class="carousel-images">
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Subaru1.jpg" alt="WRX">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Subaru2.jpg" alt="WRX">
+                   </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Subaru3.jpg" alt="WRX">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Subaru4.jpg" alt="WRX">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Subaru5.jpg" alt="WRX">
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button onclick="moveSlide('carousel1', -1)">&#10094;</button>
+                    <button onclick="moveSlide('carousel1', 1)">&#10095;</button>
+                </div>
+            </div>
+            <h2>Subaru Impreza WRX STi (1994–2021)</h2>
+            <h3>Diseñado por Subaru Tecnica International, el WRX STi llevó el concepto del WRX al siguiente nivel. Con ajustes de motor más agresivos, una transmisión manual de 6 velocidades, diferencial central activo, frenos Brembo y suspensiones mejoradas, el STi se convirtió en una leyenda de la competición y de las calles japonesas. El STi es un auto construido con mentalidad de rally, y todo en él —desde la dirección hasta la electrónica— está orientado a maximizar el rendimiento. Su evolución constante lo mantuvo como un referente de la ingeniería japonesa durante más de dos décadas.</h3>
+            
+            <div class="carousel" id="carousel2">
+                <div class="carousel-images">
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Subaru6.jpg" alt="STi">
+                        <p>Bunta Fujiwara (Initial D: Fourth Stage)</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Subaru7.jpg" alt="STi">
+                        <p>Brian O'Conner (Fast and Furious 7)</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Subaru8.jpg" alt="STi">
+                        <p>Brian O'Conner (Fast And Furious 4)</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Subaru9.jpg" alt="STi">
+                        <P>Baby (Baby Driver)</P>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Imagenes/Subaru10.jpg" alt="STi">
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button onclick="moveSlide('carousel2', -1)">&#10094;</button>
+                    <button onclick="moveSlide('carousel2', 1)">&#10095;</button>
+                </div>
+            </div>
+        </div>    
+        <h2>Subaru Impreza WRX Type RA (1992–2000)</h2>
+        <h3>La versión RA (Record Attempt) del WRX fue desarrollada como una variante aún más enfocada a la pista y al rally. El Type RA eliminaba elementos de confort como elevalunas eléctricos, aire acondicionado o incluso insonorización, con el fin de reducir peso y mejorar la respuesta del coche. Algunos modelos incluso incluían caja de cambios cerrada, diferencial autoblocante y preparaciones especiales listas para competición. Es considerado el modelo más purista de los WRX, y una joya dentro del mundo JDM por su rareza y su brutal enfoque en el desempeño puro.</h3>
+        <div class="carousel" id="carousel3">
+            <div class="carousel-images">
+                <div class="carousel-item">
+                    <img src="../Imagenes/Subaru11.jpg" alt="RA">
+                    <p>Michel Elias</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Subaru12.jpg" alt="RA">
+                    <p>Michel Elias</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Subaru13.jpg" alt="RA">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Subaru14.jpg" alt="RA">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/SUbaru15.jpg" alt="RA">
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button onclick="moveSlide('carousel3', -1)">&#10094;</button>
+                <button onclick="moveSlide('carousel3', 1)">&#10095;</button>
+            </div>
+        </div>
+
+        <h2>Subaru Impreza 22B STi (1998)</h2>
+        <h3>El 22B STi es probablemente el modelo más legendario de Subaru. Fue lanzado como una edición limitada para celebrar el 40 aniversario de la marca y sus tres campeonatos consecutivos en el WRC. Este coupé tenía un motor bóxer 2.2 litros turbo con más de 280 HP, una carrocería ensanchada inspirada en los autos de rally, suspensión especial de Bilstein y un comportamiento dinámico inigualable. Solo se fabricaron 400 unidades para Japón, convirtiéndolo en uno de los autos más codiciados por coleccionistas. Para muchos, este es el máximo ícono de Subaru.</h3>
+        <div class="carousel" id="carousel4">
+            <div class="carousel-images">
+                <div class="carousel-item">
+                    <img src="../Imagenes/Subaru16.jpg" alt="22B">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Subaru17.jpg" alt="22B">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Subaru18.jpg" alt="22B">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Subaru19.jpg" alt="22B">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Subaru20.jpg" alt="22B">
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button onclick="moveSlide('carousel4', -1)">&#10094;</button>
+                <button onclick="moveSlide('carousel4', 1)">&#10095;</button>
+            </div>
+        </div>
+        <h2>Subaru WRX S204 (2006)</h2>
+        <h3>El WRX S204 fue una edición especial producida por STi que tomó la base del WRX STi y la llevó a un nivel más refinado y técnico. Limitado a solo 600 unidades, este modelo contaba con mejoras específicas en motor, suspensión, frenos y peso. Su motor bóxer turbo entregaba más potencia (aproximadamente 320 HP), con una entrega más lineal y suave, acompañada por un interior más premium pero con ADN de competición. Es uno de los modelos especiales más equilibrados que ha producido Subaru y refleja la capacidad de la marca para ofrecer vehículos tanto agresivos como sofisticados.</h3>
+        <div class="carousel" id="carousel5">
+            <div class="carousel-images">
+                <div class="carousel-item">
+                    <img src="../Imagenes/Subaru21.jpg" alt="S204">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Subaru22.jpg" alt="S204">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Subaru23.jpg" alt="S204">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Subaru24.jpg" alt="S204">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagenes/Subaru25.jpg" alt="S204">
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button onclick="moveSlide('carousel5', -1)">&#10094;</button>
+                <button onclick="moveSlide('carousel5', 1)">&#10095;</button>
+            </div>
+        </div>
+
+    <script>
+        const carouselData = {}; // To store indices for each carousel
+
+        function moveSlide(carouselId, step) {
+            if (!carouselData[carouselId]) {
+                carouselData[carouselId] = 0;
+            }
+
+            const carousel = document.getElementById(carouselId);
+            const slides = carousel.querySelectorAll('.carousel-item');
+            const totalSlides = slides.length;
+
+            carouselData[carouselId] = (carouselData[carouselId] + step + totalSlides) % totalSlides; // Circular navigation
+            const newTransformValue = -carouselData[carouselId] * 100;
+            carousel.querySelector('.carousel-images').style.transform = `translateX(${newTransformValue}%)`;
+        }
+    </script>
+</body>
+</html>
